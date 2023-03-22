@@ -34,14 +34,14 @@ struct UserDetailsView: View {
                                     Text(repo.name)
                                         .font(.title3)
                                         .bold()
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.primary)
                                         .lineLimit(1)
                                         .padding()
                                 }
                                 
                                 HStack {
                                     Image(systemName: "chart.bar.doc.horizontal.fill")
-                                        .foregroundColor(.black.opacity(0.5))
+                                        .foregroundColor(.primary.opacity(0.5))
                                         .padding()
 
                                     Text(repo.language ?? "No info")
@@ -50,14 +50,14 @@ struct UserDetailsView: View {
                                     Spacer()
                                     
                                     Image(systemName: "arrow.triangle.branch")
-                                        .foregroundColor(.black.opacity(0.5))
+                                        .foregroundColor(.primary.opacity(0.5))
 
                                     Text(String(repo.forks))
                                         .bold()
                                         .frame(width: 50)
                                     
                                     Image(systemName: "eye.fill")
-                                        .foregroundColor(.black.opacity(0.5))
+                                        .foregroundColor(.primary.opacity(0.5))
                                     
                                     Text(String(repo.watchers))
                                         .frame(width: 50)

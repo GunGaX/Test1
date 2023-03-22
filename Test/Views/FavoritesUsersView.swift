@@ -36,7 +36,7 @@ struct FavoritesUsersView: View {
                                         HStack {
                                             Text(user.login!)
                                                 .font(.title3)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.primary)
                                                 .bold()
                                                 .padding(.top)
                                             

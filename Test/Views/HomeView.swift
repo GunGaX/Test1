@@ -36,14 +36,14 @@ struct HomeView: View {
                                         HStack {
                                             Text(user.login)
                                                 .font(.title3)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.primary)
                                                 .bold()
                                                 .padding(.top)
                                             
                                             if viewModel.isSaved(user: user) {
                                                 Image(systemName: "person.fill")
                                                     .font(.title3)
-                                                    .foregroundColor(.black)
+                                                    .foregroundColor(.primary)
                                                     .bold()
                                                     .padding(.top)
                                                 
