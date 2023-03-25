@@ -17,6 +17,7 @@
 		B6383F4A29CA690F000C1BB6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6383F4929CA690F000C1BB6 /* HomeView.swift */; };
 		B6383F4C29CA69DF000C1BB6 /* FavoritesUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6383F4B29CA69DF000C1BB6 /* FavoritesUsersView.swift */; };
 		B6383F5229CA719B000C1BB6 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6383F5129CA719B000C1BB6 /* UserDetailsView.swift */; };
+		B6C8EB8A29CF111800D29EB8 /* UserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8EB8929CF111800D29EB8 /* UserItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B6383F4929CA690F000C1BB6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6383F4B29CA69DF000C1BB6 /* FavoritesUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUsersView.swift; sourceTree = "<group>"; };
 		B6383F5129CA719B000C1BB6 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		B6C8EB8929CF111800D29EB8 /* UserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +88,9 @@
 			children = (
 				B6383F3929CA5661000C1BB6 /* ContentView.swift */,
 				B6383F4929CA690F000C1BB6 /* HomeView.swift */,
-				B6383F5129CA719B000C1BB6 /* UserDetailsView.swift */,
 				B6383F4B29CA69DF000C1BB6 /* FavoritesUsersView.swift */,
+				B6C8EB8929CF111800D29EB8 /* UserItemView.swift */,
+				B6383F5129CA719B000C1BB6 /* UserDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				B6383F4A29CA690F000C1BB6 /* HomeView.swift in Sources */,
 				B6383F3829CA5661000C1BB6 /* TestApp.swift in Sources */,
 				B6383F4C29CA69DF000C1BB6 /* FavoritesUsersView.swift in Sources */,
+				B6C8EB8A29CF111800D29EB8 /* UserItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

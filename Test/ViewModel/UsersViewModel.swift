@@ -32,9 +32,7 @@ class UsersViewModel: ObservableObject {
                     } else {}
                     return self.users
                 })
-                .sink { res in
-                    print(res)
-                } receiveValue: { [weak self] users in
+                .sink { _ in } receiveValue: { [weak self] users in
                     self?.users = users
                 }
                 .store(in: &bag)
@@ -58,9 +56,7 @@ class UsersViewModel: ObservableObject {
                     } else {}
                     return self.repos
                 })
-                .sink { res in
-                    print(res)
-                } receiveValue: { [weak self] repos in
+                .sink { _ in } receiveValue: { [weak self] repos in
                     self?.repos = repos
                 }
                 .store(in: &bag)
@@ -120,12 +116,15 @@ class UsersViewModel: ObservableObject {
     
     func deleteData(userID: Int64) {
         var userToDelete: UserEntity?
+        
         for savedUser in savedUsers {
             if savedUser.id == userID {
                 userToDelete = savedUser
             }
         }
-        container.viewContext.delete(userToDelete!)
+        guard let userToDelete = userToDelete else { return }
+        
+        container.viewContext.delete(userToDelete)
         saveData()
     }
     
