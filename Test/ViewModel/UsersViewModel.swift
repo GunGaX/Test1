@@ -29,7 +29,11 @@ class UsersViewModel: ObservableObject {
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     if let users = try? decoder.decode([User].self, from: data) {
                         self.users = users
-                    } else {}
+                    } else {
+                        
+                        //ERROR HANDLING HERE
+                        
+                    }
                     return self.users
                 })
                 .sink { _ in } receiveValue: { [weak self] users in
@@ -53,7 +57,11 @@ class UsersViewModel: ObservableObject {
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     if let repos = try? decoder.decode([Repo].self, from: data) {
                         self.repos = repos
-                    } else {}
+                    } else {
+                        
+                        //ERROR HANDLING HERE
+                        
+                    }
                     return self.repos
                 })
                 .sink { _ in } receiveValue: { [weak self] repos in
@@ -73,6 +81,10 @@ class UsersViewModel: ObservableObject {
         container.loadPersistentStores { (description, error) in
             if let error = error {
                 print("Error while loading data!!! \(error)")
+            } else {
+                
+                //ERROR HANDLING HERE
+                
             }
             
         }
